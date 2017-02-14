@@ -1,0 +1,12 @@
+
+
+<h1>Articles#index</h1>
+<p>This is Theodore's wikinimous</p>
+  <%= link_to "create new article", new_article_path%>
+<br>
+<ul class="text-center list-group-item">
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article.id)%></li>
+    <p><%= article.content %></p>
+  <% end %>
+</ul>

@@ -1,0 +1,7 @@
+<h1>SHOW</h1>
+
+<h2><%= @article.title %></h2>
+<h3><%= @kram %></h3>
+
+<%= link_to "Edit the article", edit_article_path(@article) %>
+<%= link_to "DESTROY the article", article_path(@article), method: :delete %>

@@ -1,0 +1,18 @@
+<%= form_for @article do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <div class="editor">
+    <%= f.text_area :content %>
+  </div>
+  <div class="editor">
+
+  <%= f.submit %>
+<% end %>
+
+
+    <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+    </script>
